@@ -1,0 +1,266 @@
+.app {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  
+  .board-creation input,
+  .task-creation input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .board-creation button,
+  .task-creation button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .boards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .board {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .board-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .tasks {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .task-buttons button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .task-buttons button:first-child {
+    background-color: #28a745;
+    color: white;
+    border: none;
+  }
+  
+  .task-buttons button:last-child {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+  }
+  .task {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent text wrapping */
+    max-width: 100%; /* Ensure it doesn't exceed its container's width */
+  }
+  
+  .task::-webkit-scrollbar {
+    height: 6px; /* Adjust the height of the scrollbar */
+  }
+  
+  .task::-webkit-scrollbar-thumb {
+    background: #bbb; /* Scrollbar thumb color */
+    border-radius: 4px; /* Rounded edges for scrollbar */
+  }
+  
+  .task::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Darker color on hover */
+  }
+  
+  .boards {
+  display: flex; 
+  gap: 20px;
+  overflow-x: auto; 
+  padding: 10px;
+  max-height: 80vh; 
+  box-sizing: border-box; 
+}
+
+.board {
+  flex-shrink: 0; 
+  width: 300px; 
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.tasks {
+  list-style: none;
+  padding: 0;
+  max-height: 200px; 
+  overflow-y: auto; 
+  box-sizing: border-box; 
+}
+
+.task {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px; 
+}
+
+.task-buttons button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.task-buttons button:first-child {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.task-buttons button:last-child {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+.pppp{
+  padding:9.8px;
+  font-size:20px ;
+}
+.addtaskfild {
+  padding: 12px; /* Increased padding for a larger field */
+  width: 100%; /* Ensures the input field spans the full width */
+  border: 2px solid #ccc; /* Slightly thicker border for emphasis */
+  border-radius: 5px; /* Smooth rounded corners */
+  font-size: 16px; /* Larger font size for better readability */
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inner shadow for depth */
+  transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+.addtaskfild:focus {
+  border-color: #007bff; /* Blue border on focus */
+  background-color: #fff; /* White background on focus */
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Subtle outer glow on focus */
+}
+.deleteboardbtn {
+  background-color: #dc3545; /* Bright red for delete action */
+  color: #fff; /* White text for contrast */
+  padding: 10px 15px; /* Comfortable padding for usability */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Smooth rounded corners */
+  font-size: 14px; /* Readable font size */
+  cursor: pointer; /* Pointer cursor to indicate interactivity */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.deleteboardbtn:hover {
+  background-color: #c82333; /* Slightly darker red on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.deleteboardbtn:active {
+  background-color: #a71d2a; /* Darker red when clicked */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3); /* Inner shadow for pressed effect */
+}
+
+.deleteboardbtn:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 5px rgba(220, 53, 69, 0.5); /* Subtle glow for focus */
+}
+.addtaskboardbtn {
+  background-color: #28a745; /* Green for primary action */
+  color: #fff; /* White text for contrast */
+  padding: 10px 15px; /* Comfortable padding */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Smooth rounded corners */
+  font-size: 14px; /* Readable font size */
+  cursor: pointer; /* Pointer cursor to indicate interactivity */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.addtaskboardbtn:hover {
+  background-color: #15f069; /* Lighter green on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Enhanced shadow for hover effect */
+}
+
+.addtaskboardbtn:active {
+  background-color: #0fb45a; /* Slightly darker green when clicked */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3); /* Inner shadow for pressed effect */
+}
+
+.addtaskboardbtn:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 5px rgba(21, 240, 105, 0.5); /* Subtle glow for focus */
+}
+/*  */
+/* Profile button container */
+.profile-button {
+  position: absolute;
+  top: 20px; /* Adjust based on where you want it */
+  right: 20px; /* Adjust based on where you want it */
+  z-index: 10; /* Ensure it stays on top */
+}
+
+/* Profile button styling */
+.profile-button button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.profile-button button:hover {
+  background-color: #0056b3; /* Darker blue */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Focus effect */
+.profile-button button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.6); /* Blue glow when focused */
+}
